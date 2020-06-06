@@ -1,0 +1,30 @@
+<html>
+<head> <title>Pract10d</title>
+<script type="text/javascript">
+function check()
+{
+var a=document.f1.a1.value;
+if(a.length==10)
+{
+	if(a[0]==9  || a[0]==8 || a[0]==7 || a[0]==6)
+	{
+		document.getElementById("p1").innerHTML = a +" is a Mobile Number";
+	}
+	else
+	{
+		document.getElementById("p1").innerHTML =a+" is not a Mobile Number";
+	}
+}
+else
+{
+	document.getElementById("p1").innerHTML =a+" is not a Mobile Number";
+} 
+}
+</script> </head>
+<body>
+<form name="f1">
+Enter Number:<input type="textbox" name="a1"/>	
+<input type="button" value="Check" onclick="check()"/>
+<p><span id=p1> </span></p>
+</form> </body>
+</html>

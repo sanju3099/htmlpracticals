@@ -1,0 +1,23 @@
+<html>
+<head> <title>Pract10c</title>
+<script type="text/javascript">
+function check(){
+	var a=document.f1.a1.value;
+	var b=" ";
+	for(var i=1;i<=a;i++){
+		if(i%7==0 && i%2!=0){
+			b= b + " " +i;
+		}
+	}
+	document.getElementById("p1").innerHTML =b;
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Enter Number:<input type="number" name="a1"/>	
+<input type="button" value="Submit" onclick="check()"/>
+<p>Answer : <span id=p1></span></p>
+</form>
+</body>
+</html>

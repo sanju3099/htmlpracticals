@@ -1,0 +1,22 @@
+h1{
+	text-align:center;
+	color:Orange;	
+	text-decoration:underline;
+	font-style:italic		
+	}
+p.a{
+	text-align:left; 
+	background-color:aqua; 
+	font-family:fonte
+	}
+p.b{
+	text-align:right;
+	Background-color:lightgreen; 
+	font-family:chiller;
+	font-size:20;		
+	}
+p.c{
+	text-align:center; 
+	Background-color:yellow; 
+	font-family:verdana
+	}

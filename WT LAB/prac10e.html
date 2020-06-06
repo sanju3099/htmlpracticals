@@ -1,0 +1,23 @@
+<html>
+<head> <title>Pract10e</title>
+<script type="text/javascript">
+function check() {
+	var name=document.f1.a1.value;
+	var pass=document.f1.p1.value;
+	var repass=document.f1.p2.value;
+	if(pass==repass) {
+		document.getElementById("p1").innerHTML =name +" your Password is Correct";
+	}
+	else {
+		document.getElementById("p1").innerHTML =name +" your Password is Incorrect" ;
+	} }
+</script>
+</head>
+<body> <form name="f1">
+Enter Name:<input type="textbox" name="a1"/><br/><br/>	
+Enter Password:<input type="Password" name="p1"/><br/><br/>
+Re-Enter Password:<input type="Password" name="p2"/><br/><br/>
+<input type="button" value="check" onclick="check()"/>
+<p><span id=p1> </span></p>
+</form> </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head> <title>Pract10a</title>
+		<script type="text/javascript">
+		function add(){
+			var a=document.f1.a1.value; var b=document.f1.b1.value;
+			var c= (+a) + (+b);
+			document.getElementById("p1").innerHTML = " Addition is:"+ c;
+		}
+		function sub(){
+			var a=document.f1.a1.value; 	var b=document.f1.b1.value;
+			var c= (+a) - (+b);
+			document.getElementById("p1").innerHTML = " Substraction is:"+ c;
+		}
+		function mul(){
+			var a=document.f1.a1.value;	var b=document.f1.b1.value;
+			var c= (+a) * (+b);
+			document.getElementById("p1").innerHTML= "Multiplication is:"+ c;
+		}
+		function div(){
+			var a=document.f1.a1.value; 	var b=document.f1.b1.value;
+			var c= (+a) / (+b);
+			document.getElementById("p1").innerHTML = "Division is:"+ c;
+		}
+		</script>
+	</head>
+	<body> <form name="f1">
+			Enter 1st Value:<input type="number" name="a1"/><br/>
+			Enter 2nd Value:<input type="number" name="b1"/><br/><br/>
+			<input type="button" value="Addition" onclick="add()"/>
+			<input type="button" value="Substraction" onclick="sub()"/>
+			<input type="button" value="Multiplication" onclick="mul()"/>
+			<input type="button" value="Division" onclick="div()"/>
+			<p ><span id=p1> </span></p>
+		</form> </body>
+</html>

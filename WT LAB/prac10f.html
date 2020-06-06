@@ -1,0 +1,23 @@
+<html>
+<head> <title>Pract10f</title>
+<script type="text/javascript">
+function check() {
+	var a1=document.f1.a.value;
+	var atpos=a1.indexOf('@');
+	var dotpos=a1.indexOf('.');
+	if (atpos<1 || dotpos-atpos<=2 || dotpos+2>=a1.length) {
+		document.getElementById("p1").innerHTML ="Invalid Email";
+	}
+	else {
+		document.getElementById("p1").innerHTML ="valid Email";
+	} }
+</script>
+</head>
+<body>
+<form name="f1">
+Enter Email:<input type="textbox" name="a"/><br/>	
+<input type="button" value="check" onclick="check()"/>
+<p><span id=p1> </span></p>
+</form>
+</body>
+</html>
